@@ -108,7 +108,7 @@ Font dimuat dari Google Fonts, jadi pastikan komputer tersambung ke internet.
 Website sudah terpasang di Vercel:
 
 - Proyek Vercel: **web-apbp**
-- Alamat Vercel: https://web-apbp-brown.vercel.app
+- Alamat Vercel: https://apbn-development.vercel.app
 - Domain utama: **https://apbp.my.id** (`www.apbp.my.id` otomatis dialihkan ke sana)
 
 ### Pengaturan DNS di Rumahweb (sekali saja, setelah domain aktif)

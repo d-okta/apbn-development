@@ -20,7 +20,7 @@ Dirancang dan dibangun oleh **Diandra** sebagai proyek pribadi.
 | `favicon.ico`, `site.webmanifest` | Ikon tab browser dan ikon saat website disimpan ke layar utama ponsel       |
 | `404.html`             | Halaman "rute tidak ditemukan" untuk alamat yang salah                                 |
 | `vercel.json`          | Pengaturan Vercel: header keamanan, `data.js` tanpa cache, pengalihan www → apbp.my.id |
-| `.vercelignore`        | Daftar file yang tidak ikut diunggah ke Vercel (README, folder `.claude` dan `tools`)  |
+| `.vercelignore`        | Daftar file yang tidak ikut diunggah ke Vercel (README, `tools`, file `.env`)          |
 | `tools/`               | Skrip pembuat lapisan logo dan pengecil model 3D (hanya dipakai di komputer, tidak ikut diunggah) |
 | `robots.txt`, `sitemap.xml` | Izin diindeks mesin pencari dan peta situs untuk Google                           |
 | `.vercel/`             | Penghubung folder ini dengan proyek Vercel **web-apbp** (dibuat otomatis, jangan dihapus) |
@@ -108,7 +108,7 @@ Font dimuat dari Google Fonts, jadi pastikan komputer tersambung ke internet.
 Website sudah terpasang di Vercel:
 
 - Proyek Vercel: **web-apbp**
-- Alamat Vercel: https://web-apbp.vercel.app
+- Alamat Vercel: https://web-apbp-brown.vercel.app
 - Domain utama: **https://apbp.my.id** (`www.apbp.my.id` otomatis dialihkan ke sana)
 
 ### Pengaturan DNS di Rumahweb (sekali saja, setelah domain aktif)
@@ -135,7 +135,7 @@ dengan perintah berikut di folder ini (Vercel CLI sudah login di komputer ini):
 git add .
 git commit -m "Perbarui data pengurus"
 git push
-npx.cmd vercel deploy --prod
+vercel.cmd deploy --prod
 ```
 
 Versi baru langsung tayang di https://apbp.my.id. Repo GitHub hanya menyimpan kode;

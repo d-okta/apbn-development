@@ -3,3 +3,4 @@ README.md
 .claude
 tools
 _lab
+.env*

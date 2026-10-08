@@ -1,6 +1,7 @@
 .vercel
 .claude
 _lab
+.env*
 
 # File sistem
 Thumbs.db

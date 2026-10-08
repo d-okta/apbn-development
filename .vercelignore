@@ -1,0 +1,5 @@
+# File yang tidak perlu ikut diunggah ke Vercel
+README.md
+.claude
+tools
+_lab

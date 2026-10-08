@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Halaman tidak ditemukan — APBP</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400..700&family=Google+Sans+Code:wght@400..600&display=swap">
+  <!-- alamat diawali "/" karena halaman ini bisa tampil di alamat mana pun -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    .lost {
+      position: relative;
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+      padding: 56px 0;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .lost::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: var(--graticule);
+      background-size: 72px 72px;
+      -webkit-mask-image: radial-gradient(circle at center, #000 30%, transparent 75%);
+      mask-image: radial-gradient(circle at center, #000 30%, transparent 75%);
+    }
+
+    .lost-code {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      color: transparent;
+      font-size: clamp(9rem, 4rem + 22vw, 22rem);
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.06em;
+      -webkit-text-stroke: 1.5px rgb(2 3 109 / 0.12);
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .lost-inner {
+      position: relative;
+      display: grid;
+      justify-items: center;
+      gap: 18px;
+      max-width: 640px;
+    }
+
+    .lost-brand img {
+      width: min(300px, 70vw);
+      margin-bottom: 8px;
+    }
+
+    .lost h1 {
+      font-size: clamp(1.8rem, 1.2rem + 2.4vw, 2.8rem);
+      font-weight: 700;
+      letter-spacing: -0.035em;
+      text-wrap: balance;
+    }
+
+    .lost-text {
+      max-width: 32em;
+      color: var(--muted);
+    }
+
+    .lost .btn-slant {
+      margin-top: 14px;
+    }
+  </style>
+</head>
+<body>
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15"/><path d="m13 6 6 6-6 6"/></symbol>
+  </svg>
+
+  <main class="lost">
+    <p class="lost-code" aria-hidden="true">404</p>
+    <div class="container lost-inner">
+      <a class="lost-brand" href="/"><img src="/assets/img/logo-apbp.webp" alt="APBP, Asosiasi Prodi Bidang Penerbangan" width="1000" height="393"></a>
+      <p class="code">Kode 404 · Rute tidak ditemukan</p>
+      <h1>Halaman ini keluar dari rute penerbangan.</h1>
+      <p class="lost-text">Alamat yang Anda buka tidak tersedia atau sudah dipindahkan. Silakan kembali ke beranda APBP.</p>
+      <a class="btn-slant" href="/">
+        <span>Kembali ke beranda</span>
+        <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+      </a>
+    </div>
+  </main>
+</body>
+</html>

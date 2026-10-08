@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://apbp.my.id/sitemap.xml
